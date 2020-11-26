@@ -20,6 +20,24 @@ header{
     flex-wrap: wrap;
 }
 
+.menu-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .menu-mobile{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .menu-mobile i{
+        color: #124265;
+    }
+    .menu{
+        display: none;
+    }
+}
+
 /* Header Menu */
 
 .container{
@@ -49,11 +67,11 @@ header{
 }
 
 .menu a:hover{
-    color: #007bff;
+    color: #2487ce;
 }
 
 .menu .btn-menu{
-    background-color: #007bff;
+    background-color: #2487ce;
     display: inline-block;
     padding: 8px 20px;
     color: #FFF;
@@ -87,13 +105,13 @@ section.main{
 }
 
 .main__cta p{
-    color: gray;
+    color: #5e5e5e;
     font-size: 19px;
     margin: 10px 0;
 }
 
 .main__cta button{
-    background-color: #007bff;
+    background-color: #2487ce;
     display: inline-block;
     padding: 10px 40px;
     color: #FFF;
@@ -139,7 +157,7 @@ section.main{
 }
 
 .diferenciais-single p{
-    color: gray;
+    color:  #5e5e5e;
     font-size: 14px;
     line-height: 30px;
 }
@@ -170,7 +188,7 @@ section.about{
 
 .call-about p{
     font-size: 14px;
-    color: gray;
+    color:  #5e5e5e;
     margin: 20px 0px;
 }
 
@@ -210,7 +228,7 @@ section.about{
 }
 
 .content-about button:hover{
-    background-color: #007bff;
+    background-color: #2487ce;
     color: #FFF;
 }
     
@@ -219,5 +237,38 @@ section.about{
     .content-about p{
         width: 100%;
         margin: 20px 20px;
+    }
+}
+
+/* Conquistas */
+section.conquest{
+    background-color: #f8fbfe;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.conquest-single{
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.conquest-single h2{
+    color: #124265;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.conquest-single p{
+    font-size: 16px;
+    color: #1e6ca6;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .conquest-single{
+        width: 100%;
+        margin-bottom: 50px;
     }
 }
