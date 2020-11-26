@@ -9,7 +9,7 @@
 header{
     background-color: #FFF;
     padding: 20px 0;
-    border: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
 }
 
 .center{
@@ -45,7 +45,7 @@ header{
     font-size: 14px;
     text-decoration: none;
     margin-left: 20px;
-    transition: 300ms;
+    /* transition: 300ms; */
 }
 
 .menu a:hover{
@@ -67,7 +67,7 @@ header{
 
 /* Header */
 section.main{
-    background-image: url("../img/hero-bg.jpg");
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .3)), url("../img/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,6 +103,11 @@ section.main{
     cursor: pointer;
 }
 
+.main__cta button:hover{
+    background-color: #124265;
+    color: #FFF;
+}
+
 .diferenciais{
     display: flex;
     flex-wrap: wrap;
@@ -113,12 +118,18 @@ section.main{
     width: 23%;
     margin-right: 2%;
     padding: 50px 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(18, 66, 101, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.diferenciais-single:hover{
+    transform: scale(1.08);
 }
 
 .diferenciais-single i{
-    color: #007bff;
-    font-size: 23px;
+    color: #2487ce;
+    font-size: 30px;
 }
 
 .diferenciais-single h2{
@@ -137,5 +148,76 @@ section.main{
     .diferenciais-single{
         width: 100%;
         margin-bottom: 20px;
+    }
+}
+
+/* About */
+section.about{
+    padding: 80px 0;
+}
+
+.call-about{
+    width: 100%;
+    text-align: center;
+}
+
+.call-about h2{
+    font-size: 32px;
+    color: #124265;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.call-about p{
+    font-size: 14px;
+    color: gray;
+    margin: 20px 0px;
+}
+
+.content-about{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-about p{
+    width: 48%;
+    margin-right: 2%;
+    color: #444;
+    margin-top: 10px;
+}
+
+.content-about i{
+    color: #2487ce;
+    margin-right: 5px;
+}
+
+.content-about span{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.content-about button{
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: #FFF;
+    border: 2px solid #2487ce;
+    color: #2487ce;
+    margin-top: 20px;
+}
+
+.content-about button:hover{
+    background-color: #007bff;
+    color: #FFF;
+}
+    
+
+@media screen and (max-width: 768px){
+    .content-about p{
+        width: 100%;
+        margin: 20px 20px;
     }
 }
