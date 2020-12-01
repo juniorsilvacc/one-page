@@ -24,6 +24,40 @@ header{
     display: none;
 }
 
+.menu-items{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #FFF;
+    border-bottom: 1px solid #124265;
+    display: block;
+    transition: 500ms;
+    opacity: 0;
+}
+
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    color: #124265;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    transition: 200ms ease-in-out;
+}
+
+.menu-items a:hover{
+    color: #2487ce;
+}
+
+.menu-items.show{
+    opacity: 1;
+}
+
+.menu-items.hidden{
+    opacity: 0;
+}
+
 @media screen and (max-width: 768px){
     .menu-mobile{
         display: block;
@@ -105,7 +139,7 @@ section.main{
 }
 
 .main__cta p{
-    color: #5e5e5e;
+    color: #444444;
     font-size: 19px;
     margin: 10px 0;
 }
@@ -157,7 +191,7 @@ section.main{
 }
 
 .diferenciais-single p{
-    color:  #5e5e5e;
+    color: #444444;
     font-size: 14px;
     line-height: 30px;
 }
@@ -188,8 +222,9 @@ section.about{
 
 .call-about p{
     font-size: 14px;
-    color:  #5e5e5e;
+    color: #444444;
     margin: 20px 0px;
+    font-style: italic;
 }
 
 .content-about{
@@ -200,7 +235,7 @@ section.about{
 .content-about p{
     width: 48%;
     margin-right: 2%;
-    color: #444;
+    color: #444444;
     margin-top: 10px;
 }
 
@@ -212,6 +247,7 @@ section.about{
 .content-about span{
     display: inline-block;
     margin-top: 10px;
+    color: #444444;
 }
 
 .content-about button{
@@ -270,5 +306,60 @@ section.conquest{
     .conquest-single{
         width: 100%;
         margin-bottom: 50px;
+    }
+}
+
+/* About Empreeendedor */
+section.about-empreend{
+    padding: 80px 0;
+}
+
+.about-empreend-img{
+    width: 50%;
+}
+
+.about-empreend-img img{
+    max-width: 100%;
+}
+
+.about-empreend-content{
+    width: 50%;
+    padding: 0 30px;
+}
+
+.about-empreend-content h3{
+    font-size: 24px;
+    color: #124265;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-empreend-content p{
+    font-size: 1rem;
+    color: #444444;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.content-about-empreend i{
+    color: #2487ce;
+    margin-right: 5px;
+}
+
+.content-about-empreend span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #444444;
+}
+
+@media screen and (max-width: 768px){
+    .about-empreend-img{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .about-empreend-content{
+        margin-top: 30px;
+        width: 100%;
+        padding: 0px 20px;
     }
 }
